@@ -1,6 +1,6 @@
 # Mapa de componentes — NexaSoft Incidencias (versión heredada)
 
-> Documento elaborado a partir de la lectura del código del commit inicial (`b4887f0` / `b49f713`), antes de cualquier corrección.
+> Documento elaborado a partir de la lectura del código del commit del Día 1 (`9c6d1fd`), antes de cualquier corrección.
 
 ## 1. Estructura de `lib/`
 

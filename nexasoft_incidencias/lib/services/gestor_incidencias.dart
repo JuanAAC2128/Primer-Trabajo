@@ -19,6 +19,15 @@ class GestorIncidencias {
         .toList();
   }
 
+  // Aplica a la vez texto, estado y prioridad; null significa "Todos"/"Todas".
+  List<Incidencia> filtrar(String texto, {String? estado, Prioridad? prioridad}) {
+    return buscar(texto)
+        .where((x) =>
+            (estado == null || x.estado == estado) &&
+            (prioridad == null || x.prioridad == prioridad))
+        .toList();
+  }
+
   Incidencia? porId(String id) {
     for (var x in incidencias) {
       if (x.id == id) return x;
